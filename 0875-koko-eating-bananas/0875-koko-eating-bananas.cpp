@@ -7,7 +7,7 @@ public:
             r = max(r,piles[i]);
         }
         while(l < r){
-            int mid = (l + r)/2;
+            int mid = (l + r)>>1;
             if(isFinished(piles,h,mid)){
                 r = mid;
             }else{
