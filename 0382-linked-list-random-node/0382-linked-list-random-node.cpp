@@ -20,7 +20,8 @@ public:
     }
     
     int getRandom() {
-        int pick = (rand() % (nums.size() - 0 ) + 0);
+        // int pick = (rand() % (nums.size() - 0 ) + 0);
+        int pick = rand() % nums.size();
         return nums[pick];
     }
 };
