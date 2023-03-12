@@ -16,7 +16,6 @@ public:
         for(int i=0;i<list.size();++i){
             if(list[i] == NULL) continue;
             ListNode* temp = list[i];
-            // pq.push(temp->val);
             while(temp != NULL){
                 pq.push(temp->val);
                 temp = temp->next;
